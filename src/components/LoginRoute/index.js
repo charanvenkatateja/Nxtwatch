@@ -23,7 +23,7 @@ class LoginRoute extends Component {
     password: '',
     errorMsg: '',
     showSubmitError: false,
-    isCheckedPassword: '',
+    isCheckedPassword: false,
   }
 
   onChangeUserName = e => {
@@ -54,11 +54,11 @@ class LoginRoute extends Component {
       body: JSON.stringify(userDetails),
     }
     const response = await fetch(logUrl, options)
-    const loginData = await response.json()
+    const data = await response.json()
     if (response.ok) {
-      this.onSubmitSuccess(loginData.jwt_token)
+      this.onSubmitSuccess(data.jwt_token)
     } else {
-      this.onSubmitFailure(loginData.error_msg)
+      this.onSubmitFailure(data.error_msg)
     }
   }
 
@@ -68,10 +68,7 @@ class LoginRoute extends Component {
 
   renderPasswordField = () => {
     const {password, isCheckedPassword} = this.state
-    const jwtToken = Cookies.get('jwt_token')
-    if (jwtToken !== undefined) {
-      return <Redirect to="/" />
-    }
+
     return (
       <>
         <InputLabel htmlFor="password">PASSWORD</InputLabel>
@@ -79,7 +76,7 @@ class LoginRoute extends Component {
           type={isCheckedPassword ? 'text' : 'password'}
           id="password"
           value={password}
-          onChangePassword={this.onChangePassword}
+          onChange={this.onChangePassword}
           placeholder="password"
         />
         <ShowHideCont>
@@ -113,10 +110,13 @@ class LoginRoute extends Component {
 
   render() {
     const {showSubmitError, errorMsg} = this.state
-
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <LoginFormCont>
-        <FormCont>
+        <FormCont onSubmit={this.submitForm}>
           <LoginWebsiteLogo
             src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
             alt="website logo"

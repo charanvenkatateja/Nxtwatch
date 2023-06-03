@@ -1,4 +1,3 @@
-
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
@@ -19,7 +18,7 @@ export const SearchInput = styled.input`
   padding-right: 10px;
 `
 
-export const VideosCont = styled.div`
+export const VideosCont = styled.ul`
   display: flex;
   flex-direction: row;
 

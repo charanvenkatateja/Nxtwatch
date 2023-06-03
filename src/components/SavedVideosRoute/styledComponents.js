@@ -58,7 +58,7 @@ export const HomeCont = styled.div`
   display: flex;
   flex-direction: row;
   width: 100vw;
-  background-color: ${props => props.bgolor};
+  background-color: ${props => props.bgColor};
 `
 export const NotFoundCont = styled.div`
   display: flex;

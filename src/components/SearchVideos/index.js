@@ -1,4 +1,3 @@
-
 import {Component} from 'react'
 
 import Cookies from 'js-cookie'
@@ -6,7 +5,7 @@ import Loader from 'react-loader-spinner'
 
 import {AiOutlineSearch} from 'react-icons/ai'
 
-import VideoItems from '../VideoItems'
+import VideoCard from '../VideoCard'
 import CartContext from '../../context/CartContext'
 
 import {
@@ -141,7 +140,7 @@ class SearchVideos extends Component {
             </div>
             <VideosCont>
               {searchVideos.map(each => (
-                <VideoItems key={each.id} details={each} />
+                <VideoCard key={each.id} details={each} />
               ))}
             </VideosCont>
           </SearchVideosCont>

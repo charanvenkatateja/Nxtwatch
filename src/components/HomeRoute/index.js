@@ -30,7 +30,11 @@ class HomeRoute extends Component {
 
     return (
       <>
-        <BannerImgCont data-testid="banner" display={display}>
+        <BannerImgCont
+          data-testid="banner"
+          display={display}
+          alt="Banner Background image"
+        >
           <ModalCont>
             <BannerImg
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"

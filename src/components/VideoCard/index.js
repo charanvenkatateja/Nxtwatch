@@ -24,17 +24,17 @@ const VideoCard = props => {
         const textColor = isDarkTheme ? '#f9f9f9' : '#181818'
 
         return (
-          <NavLink to={`videos/${id}`} color={bgColor}>
-            <VideoCardCont>
+          <NavLink to={`videos/${id}`}>
+            <VideoCardCont bgColor={bgColor}>
               <ThumbnailImage src={thumbnailUrl} alt="video thumbnail" />
               <VideoCardBottomCont>
                 <ProfileImage src={profileImageUrl} alt="channel logo" />
                 <VideoDetailsCont>
-                  <VideoDetailsText textColor={textColor} size={30}>
+                  <VideoDetailsText color={textColor} size={30}>
                     {title}
                   </VideoDetailsText>
-                  <VideoDetailsText>{name}</VideoDetailsText>
-                  <VideoDetailsText textColor={textColor} size={20}>
+                  <VideoDetailsText color={textColor}>{name}</VideoDetailsText>
+                  <VideoDetailsText color={textColor} size={20}>
                     {viewsCount} views
                   </VideoDetailsText>
                   <VideoDetailsText>{publishedAt}</VideoDetailsText>

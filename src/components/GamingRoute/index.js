@@ -143,7 +143,9 @@ class GamingRoute extends Component {
                 <HomeStickyCont>
                   <Sidebar />
                 </HomeStickyCont>
-                <HomeSideCont>{this.renderAllProcess()}</HomeSideCont>
+                <HomeSideCont bgColor={bgColor}>
+                  {this.renderAllProcess()}
+                </HomeSideCont>
               </HomeCont>
             </div>
           )

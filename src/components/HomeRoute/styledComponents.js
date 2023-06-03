@@ -6,7 +6,7 @@ export const HomeCont = styled.div`
   background-color: ${props => props.bgColor};
 `
 export const BannerImgCont = styled.div`
-  background-image: url('');
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
   background-size: cover;
   display: ${props => props.display};
   padding: 50px;

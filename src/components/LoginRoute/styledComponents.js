@@ -79,7 +79,17 @@ export const UserNameInputField = styled.input`
   padding: 8px 16px 8px 16px;
 `
 
-export const PasswordInputField = styled(UserNameInputField)
+export const PasswordInputField = styled.input`
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #67748b;
+  border-radius: 3px;
+  margin-top: 5px;
+  outline: none;
+  padding: 8px 16px 8px 16px;
+`
 
 export const ErrorMsg = styled.p`
   align-self: flex-start;

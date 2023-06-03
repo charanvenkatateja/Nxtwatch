@@ -8,7 +8,7 @@ export const SearchVideoCont = styled.div`
   overflow-y: scroll;
   padding: 30px;
 `
-export const VideosCont = styled.div`
+export const VideosCont = styled.ul`
   display: flex;
   flex-direction: row;
   background-color: ${props => props.bgColor};
@@ -47,7 +47,7 @@ export const NotFoundCont = styled.div`
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background-color: '#ffffff';
+  background-color: #ffffff;
 `
 export const Image = styled.img`
   height: 300px;
@@ -63,14 +63,13 @@ export const Desc = styled.p`
   color: black;
   font-size: 20px;
 `
-export const NavLink = styled.styled(Link)` 
-margin-bottom:30px;
-text-decoration:none;
-color:#1e293b;
-display:flex;
-justify-content:center;
-align-items:center;
-
+export const NavLink = styled(Link)`
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 export const Retry = styled.button`
   cursor: pointer;

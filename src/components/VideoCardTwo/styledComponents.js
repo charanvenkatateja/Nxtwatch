@@ -39,7 +39,7 @@ export const VideoDetailsText = styled.p`
 `
 
 export const NavLink = styled(Link)`
-  color: ${props => props.textColor};
+  color: ${props => props.color};
   text-decoration: none;
   margin-bottom: 10px;
 `

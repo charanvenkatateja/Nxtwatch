@@ -3,15 +3,15 @@ import {Link} from 'react-router-dom'
 
 export const VideoCardCont = styled.li`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   list-style-type: none;
-  width: 100%;
+  width: 300px;
   cursor: pointer;
   margin: 23px;
-  border-bottom: 1px solid #000000;
-  padding-bottom: 10px;
+  background-color: ${props => props.bgColor};
 `
+
 export const ProfileImage = styled.img`
   height: 40px;
   width: 40px;
@@ -19,9 +19,7 @@ export const ProfileImage = styled.img`
 `
 
 export const ThumbnailImage = styled.img`
-  height: 250px;
-  width: 50%;
-  object-fit: scale-down;
+  width: 100%;
 `
 
 export const VideoCardBottomCont = styled.div`
@@ -31,20 +29,21 @@ export const VideoCardBottomCont = styled.div`
 `
 
 export const VideoDetailsCont = styled.div`
-  margin-left: 25px;
+  margin-left: 15px;
   display: flex;
   flex-direction: column;
 `
 
 export const VideoDetailsText = styled.p`
-  color: ${props => props.textColor};
+  color: ${props => props.color};
   font-family: 'Roboto';
   font-size: ${props => props.size};
   font-weight: bold;
+  color: #475569;
 `
 
 export const NavLink = styled(Link)`
-  color: ${props => props.textColor};
+  color: #1e293b;
   text-decoration: none;
   margin-bottom: 10px;
 `

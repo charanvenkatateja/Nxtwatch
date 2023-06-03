@@ -70,7 +70,7 @@ export const NotFoundCont = styled.div`
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background-color: '#ffffff';
+  background-color: #ffffff;
 `
 export const Image = styled.img`
   height: 300px;

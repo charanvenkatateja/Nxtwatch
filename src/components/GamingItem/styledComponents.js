@@ -40,8 +40,8 @@ export const VideoDetailsText = styled.p`
   font-weight: bold;
 `
 
-export const NavLink = styled.styled(Link)`
-color:#1e293b;
-text-decoration:none;
-margin-bottom:10px;
+export const NavLink = styled(Link)`
+  color: #1e293b;
+  text-decoration: none;
+  margin-bottom: 10px;
 `

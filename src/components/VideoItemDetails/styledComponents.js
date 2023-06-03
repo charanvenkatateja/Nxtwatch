@@ -14,7 +14,7 @@ export const ProductLoaderCont = styled.div`
 export const HomeCont = styled.div`
   display: flex;
   flex-direction: row;
-  
+
   width: 100vw;
 `
 export const NotFoundCont = styled.div`
@@ -54,87 +54,84 @@ export const Retry = styled.button`
   color: blue;
 `
 
-export const VideoDetailsSideCont =  styled.div` 
-display: flex;
+export const VideoDetailsSideCont = styled.div`
+  display: flex;
   flex-direction: column;
-  padding:30px;
-  align-items:center;
+  padding: 30px;
+  align-items: center;
   width: 100%;
 `
-export const VideoDetailsTextCont =  styled.div` 
-display: flex;
+export const VideoDetailsTextCont = styled.div`
+  display: flex;
   flex-direction: column;
- justify-content:flex-start;
-  align-items:flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 90%;
 `
-export const  VideoDetailsTitle =  styled.p` 
-color:#181818;
-font-weigth:bold;
-margin-left:10px;
-
+export const VideoDetailsTitle = styled.p`
+  color: #181818;
+  font-weight: bold;
+  margin-left: 10px;
 `
 
-export const VideoDetailsCont =  styled.div` 
-display: flex;
-flex-direction: row;
-justify-content:space-between;
-width: 90%;
+export const VideoDetailsCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
 `
 
-export const LikesCont =  styled.div` 
-display:flex;
+export const LikesCont = styled.div`
+  display: flex;
 `
 
-export const ViewsText  =  styled.p` 
-color:${props=>props.color};
-margin-left:10px;
-font-weight:bold;
+export const ViewsText = styled.p`
+  color: ${props => props.color};
+  margin-left: 10px;
+  font-weight: bold;
 `
-export const IconCont =  styled.button` 
-display: flex;
+export const IconCont = styled.button`
+  display: flex;
   justify-content: center;
   align-items: center;
-  
+
   flex-direction: row;
-  margin-right:15px;
-  cursor:pointer;
-  border:opx none;
+  margin-right: 15px;
+  cursor: pointer;
+  border: opx none;
   background-color: transparent;
-  color:${props=>props.color};
+  color: ${props => props.color};
 `
 
-export const HorizontalLine =  styled.hr` 
-backgroung-color:#181818;
-color:#181818;
-margin:15px;
-width:100%;
-
+export const HorizontalLine = styled.hr`
+  background-color: #181818;
+  color: #181818;
+  margin: 15px;
+  width: 100%;
 `
 
-export const ChannelCont  = styled.div`
-display: flex;
-flex-direction:row;
-align-items: center;
+export const ChannelCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `
 export const ChannelLogo = styled.img`
-height:50px;
-width:50px;
+  height: 50px;
+  width: 50px;
 `
 
 export const ChannelDetailsCont = styled.div`
-display: flex;
-flex-direction:column;
-margin-left:20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
 `
 
 export const LogoCont = styled.div`
-display: flex;
-justify-content:center;
-align-items: center;
-padding:10px;
-widht:80px;
-background-color:#cbd5e1;
-border-radius:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  widht: 80px;
+  background-color: #cbd5e1;
+  border-radius: 40px;
 `
-

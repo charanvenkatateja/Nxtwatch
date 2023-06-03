@@ -1,9 +1,8 @@
-
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 export const ItemText = styled.h1`
-  color: ${props => props.textColor};
+  color: ${props => props.color};
   font-size: 20px;
   font-weight: bold;
 `
